@@ -11,27 +11,27 @@
 
 void puts_half(char *str)
 {
-        int len = 0;
-        int idx = 0;
-        int i;
-        char *p = str;
+	int len = 0;
+	int idx = 0;
+	int i;
+	char *p = str;
 
-        while (*p != '\0')
-        {
-                len = len + 1;
-                p++;
-        }
+	while (*p != '\0')
+	{
+		len = len + 1;
+		p++;
+	}
 
-        if (len % 2 == 0)
-        {
-                idx = len / 2;
-        } else
-                idx = (len - 1) / 2;
+	if (len % 2 == 0)
+	{
+		idx = len / 2;
+	} else
+		idx = (len - 1) / 2;
 
-        for (i = idx; i < len; i++)
-        {
-                putchar(str[i]);
-        }
-        putchar('\n');
+	for (i = idx; i < len; i++)
+	{
+		putchar(str[i]);
+	}
+	putchar('\n');
 }
 
