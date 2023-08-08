@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main i this is a function to print its name
+ * main - prints all values passed into an argument in a new line
  * @argc: argc parameter
  * @argv: an array of the command listed
  *
@@ -13,6 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
+
 	for (i = 0; i < argc; i++)
 	{
 		printf("%s\n", argv[i]);
